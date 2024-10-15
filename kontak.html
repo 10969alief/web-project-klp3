@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #f8f4f4;
+            margin-bottom: 20px;
+        }
+
+        .contact-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 60%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            background-color: #fefefe;
+        }
+
+        .contact-item img.icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            object-fit: contain;
+        }
+
+        .contact-item h2 {
+            font-size: 1.2em;
+            color: #170202;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .simple-btn {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .simple-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container left mt-5">
+        <a href="index.html" class="btn btn-back">
+            <i class="fas fa-arrow-left"></i> Kembali
+        </a>
+<body>
+
+<header>
+    <h1>kontak toko kami</h1>
+</header>
+<!-- 
+<nav>
+    <a href="index.html">Home</a>
+    <a href="produk.html">Produk</a>
+    <a href="promo.html">Promo</a>
+    <a href="#kontak">Kontak</a>
+    <a href="about-us.html">About Us</a>
+</nav> -->
+
+<main>
+    <div class="contact-container">
+        <!-- <h1>Kontak toko kami</h1> -->
+        <div class="contact-box">
+            <div class="contact-item">
+                <img src="90.jpg" alt="Help Center Icon" class="icon">
+                <h2>Tiktok </h2>
+                <p>Akun Tiktok kami</p>
+                <button class="simple-btn" id="btnHelpCenter">Go</button>
+            </div>
+            <div class="contact-item">
+                <img src="whatsapp.png" alt="Partners Icon" class="icon">
+                <h2>whatsapp</h2>
+                <p>Whatsapp toko kami</p>
+                <button class="simple-btn" id="btnPartners">Go</button>
+            </div>
+            <div class="contact-item">
+                <img src="91.jpg" alt="Media Inquiries Icon" class="icon">
+                <h2>Instagram</h2>
+                <p>Instagram toko kami</p>
+                <button class="simple-btn" id="btnMediaInquiries">Go</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Copyright Kelompok 3</p>
+</footer>
+
+<script>
+    // Add actions for the buttons
+    document.getElementById("btnHelpCenter").onclick = function () {
+        window.location.href = "https://www.tiktok.com/@nobrand.officiall?_t=8qZRotj5nUt&_r=1";
+    };
+
+    document.getElementById("btnPartners").onclick = function () {
+        window.location.href = "https://wa.me/+6281244079388/";  
+    };
+
+    document.getElementById("btnMediaInquiries").onclick = function () {
+        window.location.href = "https://www.instagram.com/nobrand.officiall?igsh=MXhyZjRuejY5NzJ4bw==";
+    };
+</script>
+
+</body>
+</html>
